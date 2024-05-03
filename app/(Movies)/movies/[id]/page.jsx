@@ -1,12 +1,18 @@
 import { Suspense } from 'react';
-
-import MovieInfo from '../../../../components/movie-info';
+import MovieInfo, { getMovie } from '../../../../components/movie-info';
 import MovieVideos from '../../../../components/movie-videos';
 
-export default function MovieDetail({ params: { id } }) {
+/* getMovie 함수를 실행 여기서 호출 */
+export async function generateMetadata({ params: { id } }) {
+    const movie = await getMovie(id);
+    return {
+        title: movie.title,
+    };
+}
+
+export default function MovieDetailPage({ params: { id } }) {
     return (
         <div>
-            <h3>Movie Detail Page</h3>
             <Suspense fallback={<h1>Loading movie info</h1>}>
                 <MovieInfo id={id} />
             </Suspense>

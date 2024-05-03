@@ -1,4 +1,9 @@
 
-
-.next
+#dependency
 /node_modules
+
+#production
+/build
+
+#next.js
+/.next/
