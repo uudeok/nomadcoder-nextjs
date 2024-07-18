@@ -1,0 +1,12 @@
+.about {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.profiles {
+    border: 1px solid white;
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+}

@@ -19,3 +19,5 @@ export default function Movie({ id, poster_path, title }) {
         </div>
     );
 }
+
+/* Link prefetch props */
