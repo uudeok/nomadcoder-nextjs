@@ -13,7 +13,7 @@ export default function Navigation() {
                     <Link href="/">Home</Link> {path === '/' ? '🔥' : ''}
                 </li>
                 <li>
-                    <Link href="/about-us" prefetch={false}>
+                    <Link href="/about-us" prefetch={true}>
                         About Us
                     </Link>
                     {path === '/about-us' ? '🔥' : ''}

@@ -6,12 +6,6 @@ export default function AboutUs() {
     return (
         <div className={styles.about}>
             <h1>About us ! </h1>
-
-            <div className={styles.profiles}>
-                <div>
-                    <span>테스트</span>
-                </div>
-            </div>
         </div>
     );
 }
