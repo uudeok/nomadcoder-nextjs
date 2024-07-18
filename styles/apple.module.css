@@ -1,0 +1,6 @@
+.apple {
+    border: 1px solid white;
+    display: flex;
+    margin: 0 auto;
+    height: 200px;
+}
